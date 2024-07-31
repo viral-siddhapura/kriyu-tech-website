@@ -1,0 +1,122 @@
+/* .service-container {
+    max-width: 75%;
+    padding: 20px;
+    margin-left: 20%;
+    text-align: center;
+    position: relative;
+}
+
+.service-card-container {
+    display: flex;
+    transition: transform 0.3s ease;
+    cursor: grab;
+}
+
+.service-card-container:active {
+    cursor: grabbing;
+}
+
+.service-card {
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    margin-left: 2%;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+    flex: 0 0 auto;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card h2 {
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1em;
+    color: white;
+    line-height: 1.5;
+}
+
+.arrow {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.arrow.left {
+    left: 0;
+}
+
+.arrow.right {
+    right: 0;
+}
+
+@media (min-width: 600px) {
+    .service-card {
+        min-width: 300px;
+    }
+}
+
+@media (min-width: 768px) {
+    .service-card {
+        min-width: 350px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .service-card {
+        min-width: 400px;
+    }
+} */
+
+/*
+For more details-
+https://www.testkarts.com/blog/horizontal-card-scroll-with-arrow */
+
+.cover {
+    margin-top: 100px;
+}
+
+.scroll-images {
+    position: relative;
+    width: 100%;
+    padding: 40px 0px;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.scroll-buttons-container {
+    width: 50%;
+}
+
+.child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    min-width: 275px;
+    height: 200px;
+    padding: 0px 15px;
+    margin: 1px 10px;
+    color: white;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 10%);
+    box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 10%);
+}
