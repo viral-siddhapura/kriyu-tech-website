@@ -20,19 +20,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 20px 0;
-}
-
-.partner img {
-    max-width: 100%;
-    height: auto;
-    filter: brightness(0) invert(1);
-    margin-bottom: 10px;
-}
-
-.partner p {
-    font-size: 2rem;
-    color: white;
+    padding: 10px 0;
+    margin: 10px;
 }
 
 /* Responsive Adjustments */
@@ -57,7 +46,7 @@
         font-size: 1.5rem;
     }
 
-    .partner p {
+    /* .partner p {
         font-size: 0.8rem;
-    }
+    } */
 }
