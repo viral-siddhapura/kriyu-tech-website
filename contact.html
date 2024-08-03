@@ -5,11 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kriyu Tech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="contact_us_page.css">
     <script src="https://kit.fontawesome.com/a59b9b09ab.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 
 <body>
+    <script src="script.js"></script>
+    <nav class="navbar">
+        <div class="logo_container">
+            <a href="index.html">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M61.6666 60H28.3334C23.7316 60 20 56.2684 20 51.6666V18.3334C20 13.7316 23.7316 10 28.3334 10H61.6666C66.2684 10 70 13.7316 70 18.3334V51.6666C70 56.2684 66.2684 60 61.6666 60ZM35 50H58.3334V30.8334C58.3334 25.77 54.23 21.6666 49.1666 21.6666H30V45C30 47.7616 32.2384 50 35 50Z"
+                        fill="#64B5F6" />
+                    <path
+                        d="M51.6666 70H18.3334C13.7316 70 10 66.2684 10 61.6666V28.3334C10 23.7316 13.7316 20 18.3334 20H51.6666C56.2684 20 60 23.7316 60 28.3334V61.6666C60 66.2684 56.2684 70 51.6666 70ZM29.1666 60H50V35C50 32.2384 47.7616 30 45 30H25C22.2384 30 20 32.2384 20 35V50.8334C20 55.8966 24.1034 60 29.1666 60Z"
+                        fill="#FB8C00" />
+                    <path
+                        d="M60.0002 43.333V44.9996C60.0002 47.7614 57.7619 49.9996 55.0002 49.9996H38.3335V59.9996H61.6669C66.2502 59.9996 70.0002 56.2496 70.0002 51.6664V43.333H60.0002Z"
+                        fill="#64B5F6" />
+                </svg>
+            </a>
+        </div>
+        <div class="menu_container">
+            <ul class="nav_menu">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Strategies</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+            <a href="contact.html">
+                <button class="contact_button">Contact Us</button>
+            </a>
+        </div>
+    </nav>
     <div class="container">
         <div class="form-container">
             <div class="left-container">
@@ -18,28 +52,85 @@
                     <p>Let's connect with Kriyu Tech for getting solutions around AI and Machine Learning Solutions.</p>
                     <br>
                     <br>
-                    <p>Feel free to send me a message in the contact form or contact at below email</p>
+                    <p>Feel free to send me a message in the contact forml</p>
                     <br>
                     <br>
-                    <a href="mailto:viral.siddhapura@kriyutech.com" style="margin-top: 10px; font-size: large; color: white; ">viral.siddhapura@kriyutech.com</a>
+                    <p>For HR related queries</p>
+                    <br>
+                    <a href="mailto:viral.siddhapura@kriyutech.com"
+                        style="font-weight: 600; font-size: large; color: black; ">viral.siddhapura@kriyutech.com</a>
                 </div>
             </div>
             <div class="right-container">
                 <div class="right-inner-container">
-                    <form action="#">
+                    <form onsubmit="return validationForm() && sendEmail();">
                         <h2 class="lg-view">Contact</h2>
                         <h2 class="sm-view">Let's Chat</h2>
                         <p>* Required</p>
-                        <input type="text" placeholder="Name *" />
-                        <input type="email" placeholder="Email *" />
-                        <input type="phone" placeholder="Phone" />
-                        <textarea rows="4" placeholder="Message"></textarea>
+                        <input type="text" id="name" placeholder="John Doe" required />
+                        <input type="email" id="email" placeholder="Email Address" required />
+                        <input type="phone" id="phone" placeholder="Phone number" required />
+                        <textarea id="message" rows="4" placeholder="Message" required></textarea>
                         <button>Submit</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <footer class="footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul class="links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Process</a></li>
+                    <li><a href="#">Thoughts</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul class="links">
+                    <li><a href="#">Product Development</a></li>
+                    <li><a href="#">UI/UX Design</a></li>
+                    <li><a href="#">AI Development</a></li>
+                    <li><a href="#">Mobile App Development</a></li>
+                    <li><a href="#">Software Engineering</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Industries</h4>
+                <ul class="links">
+                    <li><a href="#">Finance & Insurance</a></li>
+                    <li><a href="#">Healthcare & Life Sciences</a></li>
+                    <li><a href="#">Retail and Marketplace</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>Let&apos;s talk about software</p>
+                <form action="contact.html">
+                    <button type="submit">Ask Questions</button>
+                </form>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </div>
+
+        </div>
+    </footer>
 </body>
 
 </html>
