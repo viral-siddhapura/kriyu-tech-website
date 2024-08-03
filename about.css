@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 70%;
-    padding: 20px;
+    padding: 10px;
 }
 
 .heading {
@@ -41,7 +41,7 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
 
@@ -50,7 +50,6 @@
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 200px;
     border-radius: 24px;
     line-height: 1.6;
     transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
@@ -105,19 +104,6 @@
     transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.content .link {
-    z-index: 1;
-    color: #fea000;
-    text-decoration: none;
-    font-family: inherit;
-    font-size: clamp(12px, 2.5vw, 16px);
-    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.content .link:hover {
-    text-decoration: underline;
-}
-
 .card:hover {
     transform: translate(0px, -16px);
 }
@@ -145,8 +131,80 @@
         grid-template-columns: 1fr;
     }
 
+    .card {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border-radius: 24px;
+        line-height: 1.6;
+        transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 24px;
+        border-radius: 20px;
+        color: #ffffff;
+        overflow: hidden;
+        background: #0a3cff;
+        transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .content::before,
+    .content::after {
+        position: absolute;
+        content: "";
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: inherit;
+        transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .content::before {
+        top: -4%;
+        width: 90%;
+        height: 45%;
+        background: #ced8ff;
+        z-index: -1;
+        transform-origin: bottom;
+    }
+
+    .content::after {
+        top: -8%;
+        width: 80%;
+        height: 40%;
+        background: #e7ecff;
+        z-index: -2;
+        transform-origin: bottom;
+    }
+
+    .content .para {
+        z-index: 1;
+        opacity: 1;
+        font-size: clamp(14px, 3vw, 18px);
+        transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
     .card:hover {
-        transform: none;
+        transform: translate(0px, -16px);
+    }
+
+    .card:hover .content::before {
+        rotate: -2deg;
+        top: 0;
+        width: 100%;
+        height: 50%;
+    }
+
+    .card:hover .content::after {
+        rotate: 2deg;
+        top: 0;
+        width: 100%;
+        height: 50%;
     }
 }
 

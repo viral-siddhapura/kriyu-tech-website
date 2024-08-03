@@ -20,7 +20,7 @@
     overflow: hidden;
     cursor: pointer;
     transition: all .5s;
-    background: #000000;
+    background: white;
     border: 2px solid #494949;
     border-radius: 15px;
     display: flex;
@@ -40,7 +40,7 @@
     text-align: center;
     transition: all .5s;
     text-transform: uppercase;
-    color: #a8a8a8;
+    color: black;
     letter-spacing: .1em;
 }
 
@@ -69,19 +69,19 @@
 }
 
 .card-content h2 {
-    color: #0b85cc;
+    color: black;
     margin: 0;
     padding: 5px 0;
 }
 
 .card-content h3 {
-    color: #ffffff;
+    color: black;
     margin: 0;
     padding: 5px 0;
 }
 
 .card-content h4 {
-    color: #ffffff;
+    color: black;
     margin: 0;
     padding: 5px 0;
 }
@@ -135,7 +135,7 @@
     opacity: 1;
 }
 
-@media screen and (max-width: 1068px) {
+@media screen and (max-width: 768px) {
     .card-container {
         flex-direction: column;
         align-items: center;
@@ -144,7 +144,7 @@
     .card {
         flex-direction: column;
         width: 100%;
-        min-width: 400px;
+        min-width: 300px;
         height: 500px;
     }
 
