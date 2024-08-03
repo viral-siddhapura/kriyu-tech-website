@@ -20,8 +20,8 @@
     overflow: hidden;
     cursor: pointer;
     transition: all .5s;
-    background: white;
-    border: 2px solid #494949;
+    background: linear-gradient(10deg, #ffffff 0%, #ffaf47 43%, #ebefff 100%);
+    border: 2px solid #bdbdbd;
     border-radius: 15px;
     display: flex;
     justify-content: center;
