@@ -65,7 +65,6 @@ document.addEventListener('click', function (e) {
   }
 });
 
-
 function sendEmail() {
   emailjs.init("lkXj7nvH4znZu71WF");
 
@@ -76,7 +75,12 @@ function sendEmail() {
     message: document.getElementById('message').value
   };
 
-  emailjs.send('service_y9bkh8f', 'template_wl5j16j', templateParams)
+  emailjs.send('service_y9bkh8f', 'template_mi0ebvk', {
+    name: templateParams.from_name,
+    email: templateParams.from_email,
+    phone: templateParams.phone,
+    message: templateParams.message,
+  })
     .then(function (response) {
       alert('Your message has been sent successfully!');
       clearFormFields();
@@ -101,7 +105,7 @@ function validationForm() {
   var message = document.getElementById('message').value;
   var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  if (name.trim() === '') {
+  if (name.trim() === '' || name.length < 3) {
     alert('Please enter your name');
     return false;
   }
