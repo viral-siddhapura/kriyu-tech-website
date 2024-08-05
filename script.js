@@ -1,5 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+  const aboutSection = document.getElementById('about');
+  const heading = aboutSection.querySelector('.heading');
+  const subHeading = aboutSection.querySelector('.sub-heading');
+  const description = aboutSection.querySelector('.description');
+
+  function checkScroll() {
+    const triggerBottom = window.innerHeight / 5 * 4;
+    const aboutTop = aboutSection.getBoundingClientRect().top;
+
+    if (aboutTop < triggerBottom) {
+      heading.classList.add('visible');
+      subHeading.classList.add('visible');
+      description.classList.add('visible');
+    }
+  }
+
+  window.addEventListener('scroll', checkScroll);
+  checkScroll();
+
+  window.addEventListener('scroll', checkCards);
+  checkCards();
+
   document.querySelector('.hamburger').addEventListener('click', function () {
     document.querySelector('.menu_container').classList.toggle('active');
   });
@@ -75,6 +97,7 @@ function clearFormFields() {
 function validationForm() {
   var name = document.getElementById('name').value;
   var email = document.getElementById('email').value;
+  var phone = document.getElementById('phone').value;
   var message = document.getElementById('message').value;
   var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -85,6 +108,11 @@ function validationForm() {
 
   if (!emailRegex.test(email)) {
     alert('Please enter a valid email address');
+    return false;
+  }
+
+  if (phone.trim() === '' || phone.length !== 10) {
+    alert('Please enter your 10 digit phone number');
     return false;
   }
 

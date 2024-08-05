@@ -12,7 +12,7 @@
     -webkit-overflow-scrolling: touch;
 }
 
-.special-card {
+.service-card {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

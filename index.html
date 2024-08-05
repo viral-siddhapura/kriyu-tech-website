@@ -7,40 +7,30 @@
     <title>Kriyu Tech</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="partners.css">
     <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="card.css">
     <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="partners.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://cdnjs.clouyflare/com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://kit.fontawesome.com/a59b9b09ab.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- navbar starts here -->
     <nav class="navbar">
         <div class="logo_container">
-            <a href="">
+            <a href="index.html">
                 <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_35_78)">
-                        <path
-                            d="M40 80C62.0914 80 80 62.0914 80 40C80 17.9086 62.0914 0 40 0C17.9086 0 0 17.9086 0 40C0 62.0914 17.9086 80 40 80Z"
-                            fill="#87CEEB" />
-                        <path d="M40 0C50.6087 0 60.7828 4.21427 68.2843 11.7157C75.7857 19.2172 80 29.3913 80 40H40V0Z"
-                            fill="#FFA500" />
-                        <path
-                            d="M40 80.0386C29.3913 80.0283 19.2213 75.8041 11.7271 68.2954C4.23294 60.7867 0.028547 50.6084 0.0388442 39.9998L40.0388 40.0386L40 80.0386Z"
-                            fill="#FFA500" />
-                        <path
-                            d="M15.7699 33V12.6364H20.0753V21.6151H20.3438L27.6719 12.6364H32.8324L25.2756 21.7543L32.9219 33H27.7713L22.1932 24.6278L20.0753 27.2131V33H15.7699Z"
-                            fill="black" />
-                        <path d="M49.9943 50.1861V46.6364H66.7188V50.1861H60.4844V67H56.2287V50.1861H49.9943Z"
-                            fill="black" />
-                    </g>
-                    <defs>
-                        <clipPath id="clip0_35_78">
-                            <rect width="80" height="80" fill="white" />
-                        </clipPath>
-                    </defs>
+                    <path
+                        d="M61.6666 60H28.3334C23.7316 60 20 56.2684 20 51.6666V18.3334C20 13.7316 23.7316 10 28.3334 10H61.6666C66.2684 10 70 13.7316 70 18.3334V51.6666C70 56.2684 66.2684 60 61.6666 60ZM35 50H58.3334V30.8334C58.3334 25.77 54.23 21.6666 49.1666 21.6666H30V45C30 47.7616 32.2384 50 35 50Z"
+                        fill="#64B5F6" />
+                    <path
+                        d="M51.6666 70H18.3334C13.7316 70 10 66.2684 10 61.6666V28.3334C10 23.7316 13.7316 20 18.3334 20H51.6666C56.2684 20 60 23.7316 60 28.3334V61.6666C60 66.2684 56.2684 70 51.6666 70ZM29.1666 60H50V35C50 32.2384 47.7616 30 45 30H25C22.2384 30 20 32.2384 20 35V50.8334C20 55.8966 24.1034 60 29.1666 60Z"
+                        fill="#FB8C00" />
+                    <path
+                        d="M60.0002 43.333V44.9996C60.0002 47.7614 57.7619 49.9996 55.0002 49.9996H38.3335V59.9996H61.6669C66.2502 59.9996 70.0002 56.2496 70.0002 51.6664V43.333H60.0002Z"
+                        fill="#64B5F6" />
                 </svg>
             </a>
         </div>
@@ -57,11 +47,13 @@
             </a>
         </div>
     </nav>
+    <!-- Hamburger Menu - that horizontally 3 bars using which we can slide the menu when size is reduced -->
     <div class="hamburger" onclick="toggleMenu()">
         <span></span>
         <span></span>
         <span></span>
     </div>
+    <!-- About Section -->
     <section id="about" class="container">
         <div>
             <p class="heading">AI Consulting</p>
@@ -76,57 +68,59 @@
                 deserunt quis nobis veritatis maxime. Quaerat!</p>
         </div>
     </section>
+    <!-- Machine Learning Services section starts here -->
     <section id="services" class="container">
         <div>
+            <p class="service-heading">AI Services</p>
             <h1 class="strategic-title">Machine Learning Services</h1>
             <p style="font-size: x-large; font-weight: 400; color: black;">Unlock the power of data with our
                 cutting-edge
                 Machine Learning Services</p>
             <div class="scroll-images-container">
                 <div class="scroll-images">
-                    <div class="special-card">
+                    <div class="service-card">
                         <h4>Card Title1</h4>
                         <p>Feed our system examples, and we'll teach it to predict outcomes. Ideal for tasks like sales
                             forecasting and customer classification.</p>
                     </div>
 
-                    <div class="special-card">
+                    <div class="service-card">
                         <h4>Card Title2</h4>
                         <p>Feed our system examples, and we'll teach it to predict outcomes. Ideal for tasks like sales
                             forecasting and customer classification.</p>
                     </div>
 
-                    <div class="special-card">
+                    <div class="service-card">
                         <h4>Card Title3</h4>
                         <p>Feed our system examples, and we'll teach it to predict outcomes. Ideal for tasks like sales
                             forecasting and customer classification.</p>
                     </div>
 
-                    <div class="special-card">
+                    <div class="service-card">
                         <h4>Card Title4</h4>
                         <p>Feed our system examples, and we'll teach it to predict outcomes. Ideal for tasks like sales
                             forecasting and customer classification.</p>
                     </div>
 
-                    <div class="special-card">
+                    <div class="service-card">
                         <h4>Card Title5</h4>
                         <p>Feed our system examples, and we'll teach it to predict outcomes. Ideal for tasks like sales
                             forecasting and customer classification.</p>
                     </div>
 
-                    <div class="special-card">
+                    <div class="service-card">
                         <h4>Card Title6</h4>
                         <p>Feed our system examples, and we'll teach it to predict outcomes. Ideal for tasks like sales
                             forecasting and customer classification.</p>
                     </div>
 
-                    <div class="special-card">
+                    <div class="service-card">
                         <h4>Card Title7</h4>
                         <p>Feed our system examples, and we'll teach it to predict outcomes. Ideal for tasks like sales
                             forecasting and customer classification.</p>
                     </div>
 
-                    <div class="special-card">
+                    <div class="service-card">
                         <h4>Card Title8</h4>
                         <p>Feed our system examples, and we'll teach it to predict outcomes. Ideal for tasks like sales
                             forecasting and customer classification.</p>
@@ -159,55 +153,56 @@
             </div>
         </div>
     </section>
+    <!-- Generative AI Services -->
     <div class="container">
         <h1 class="strategic-title">Generative AI Services</h1>
         <p style="font-size: x-large; font-weight: 400; color: black;">Harness the creative potential of Generative AI
             above and beyond ChatGPT:</p>
         <div class="scroll-images-container">
             <div class="scroll-images">
-                <div class="special-card">
+                <div class="service-card">
                     <h4>Card Title1</h4>
                     <p>Feed our system examples, and we'll teach it to predict outcomes. Ideal for tasks like sales
                         forecasting and customer classification.</p>
                 </div>
 
-                <div class="special-card">
+                <div class="service-card">
                     <h4>Card Title2</h4>
                     <p>Feed our system examples, and we'll teach it to predict outcomes. Ideal for tasks like sales
                         forecasting and customer classification.</p>
                 </div>
 
-                <div class="special-card">
+                <div class="service-card">
                     <h4>Card Title3</h4>
                     <p>Feed our system examples, and we'll teach it to predict outcomes. Ideal for tasks like sales
                         forecasting and customer classification.</p>
                 </div>
 
-                <div class="special-card">
+                <div class="service-card">
                     <h4>Card Title4</h4>
                     <p>Feed our system examples, and we'll teach it to predict outcomes. Ideal for tasks like sales
                         forecasting and customer classification.</p>
                 </div>
 
-                <div class="special-card">
+                <div class="service-card">
                     <h4>Card Title5</h4>
                     <p>Feed our system examples, and we'll teach it to predict outcomes. Ideal for tasks like sales
                         forecasting and customer classification.</p>
                 </div>
 
-                <div class="special-card">
+                <div class="service-card">
                     <h4>Card Title6</h4>
                     <p>Feed our system examples, and we'll teach it to predict outcomes. Ideal for tasks like sales
                         forecasting and customer classification.</p>
                 </div>
 
-                <div class="special-card">
+                <div class="service-card">
                     <h4>Card Title7</h4>
                     <p>Feed our system examples, and we'll teach it to predict outcomes. Ideal for tasks like sales
                         forecasting and customer classification.</p>
                 </div>
 
-                <div class="special-card">
+                <div class="service-card">
                     <h4>Card Title8</h4>
                     <p>Feed our system examples, and we'll teach it to predict outcomes. Ideal for tasks like sales
                         forecasting and customer classification.</p>
@@ -239,6 +234,7 @@
             </div>
         </div>
     </div>
+    <!-- Deep Learning Services -->
     <div class="container">
         <h1 class="strategic-title">Deep Learning Services</h1>
         <p style="font-size: x-large; font-weight: 400; color: black;">Elevate your business capabilities with our
@@ -246,42 +242,42 @@
         </p>
         <div class="scroll-images-container">
             <div class="scroll-images">
-                <div class="special-card">
+                <div class="service-card">
                     <h4>Card Title1</h4>
                     <p>Feed our system examples, and we'll teach it to predict outcomes. Ideal for tasks like sales
                         forecasting and customer classification.</p>
                 </div>
-                <div class="special-card">
+                <div class="service-card">
                     <h4>Card Title2</h4>
                     <p>Feed our system examples, and we'll teach it to predict outcomes. Ideal for tasks like sales
                         forecasting and customer classification.</p>
                 </div>
-                <div class="special-card">
+                <div class="service-card">
                     <h4>Card Title3</h4>
                     <p>Feed our system examples, and we'll teach it to predict outcomes. Ideal for tasks like sales
                         forecasting and customer classification.</p>
                 </div>
-                <div class="special-card">
+                <div class="service-card">
                     <h4>Card Title4</h4>
                     <p>Feed our system examples, and we'll teach it to predict outcomes. Ideal for tasks like sales
                         forecasting and customer classification.</p>
                 </div>
-                <div class="special-card">
+                <div class="service-card">
                     <h4>Card Title5</h4>
                     <p>Feed our system examples, and we'll teach it to predict outcomes. Ideal for tasks like sales
                         forecasting and customer classification.</p>
                 </div>
-                <div class="special-card">
+                <div class="service-card">
                     <h4>Card Title6</h4>
                     <p>Feed our system examples, and we'll teach it to predict outcomes. Ideal for tasks like sales
                         forecasting and customer classification.</p>
                 </div>
-                <div class="special-card">
+                <div class="service-card">
                     <h4>Card Title7</h4>
                     <p>Feed our system examples, and we'll teach it to predict outcomes. Ideal for tasks like sales
                         forecasting and customer classification.</p>
                 </div>
-                <div class="special-card">
+                <div class="service-card">
                     <h4>Card Title8</h4>
                     <p>Feed our system examples, and we'll teach it to predict outcomes. Ideal for tasks like sales
                         forecasting and customer classification.</p>
@@ -313,10 +309,11 @@
             </div>
         </div>
     </div>
+    <!-- Strategies Section -->
     <section id="strategies" class="container">
         <div>
             <h1 class="strategic-title">Our Strategic Approach to AI Adoption</h1>
-            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, possimus id totam
+            <p class="strategic-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, possimus id totam
                 repellendus eligendi, explicabo qui quibusdam vel ducimus ea error voluptatum, fugit neque voluptatem
                 minus. Pariatur dolorum facere impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Dolorem cum
@@ -419,6 +416,7 @@
             </div>
         </div>
     </div>
+    <!-- strategic options ends here -->
     <section id="partners" class="container">
         <div>
             <h1 class="strategic-title">Our Partners</h1>
@@ -916,6 +914,7 @@
             </a>
         </div>
     </div>
+    <!-- partners section ends here -->
     <section id="careers" class="footer">
         <footer>
             <div class="footer-row">
@@ -957,16 +956,25 @@
                         <button type="submit">Ask Questions</button>
                     </form>
                     <div class="icons">
-                        <i class="fa-brands fa-facebook-f"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-github"></i>
+                        <a href="">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
                     </div>
                 </div>
 
             </div>
         </footer>
     </section>
+    <!-- footer section ends here -->
     <div class="footer-bottom">
         <p>© 2024 KriyuTech, Inc. All rights reserved.</p>
     </div>
