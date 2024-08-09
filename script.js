@@ -44,6 +44,11 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+function toggleMenu() {
+  const menu = document.querySelector('.menu_container');
+  menu.classList.toggle('active');
+}
+
 document.addEventListener('click', function (e) {
   if (e.target.closest('.scroll-buttons-container button')) {
     const button = e.target.closest('.scroll-buttons-container button');

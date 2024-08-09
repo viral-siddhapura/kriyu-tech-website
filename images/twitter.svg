@@ -1,0 +1,23 @@
+<svg title="Twitter" width="80" height="80" viewBox="0 0 80 80" fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_30_6)">
+        <mask id="mask0_30_6" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+            width="80" height="80">
+            <path d="M80 0H0V80H80V0Z" fill="white" />
+        </mask>
+        <g mask="url(#mask0_30_6)">
+            <path
+                d="M70.625 0H9.375C4.19733 0 0 4.19733 0 9.375V70.625C0 75.8027 4.19733 80 9.375 80H70.625C75.8027 80 80 75.8027 80 70.625V9.375C80 4.19733 75.8027 0 70.625 0Z"
+                fill="black" />
+            <path
+                d="M55.6099 15.625H63.8799L45.8124 36.275L67.0674 64.375H50.4249L37.3899 47.3325L22.4749 64.375H14.2L33.5249 42.2875L13.135 15.625H30.1999L41.9824 31.2025L55.6099 15.625ZM52.7074 59.425H57.2899L27.7099 20.315H22.7924L52.7074 59.425Z"
+                fill="white" />
+        </g>
+    </g>
+    <title>Twitter</title>
+    <defs>
+        <clipPath id="clip0_30_6">
+            <rect width="80" height="80" fill="white" />
+        </clipPath>
+    </defs>
+</svg>
