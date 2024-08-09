@@ -58,34 +58,34 @@
     max-width: 300px;
 }
 
-.footer-col .icons {
+.footer-col .social-media-icons {
     display: flex;
     margin-top: 30px;
     gap: 20px;
 }
 
-.footer-col .icons i {
+.footer-col .social-media-icons i {
     font-size: 24px;
     transition: transform 0.3s ease;
 }
 
-.footer-col .icons i:hover {
+.footer-col .social-media-icons i:hover {
     transform: scale(1.2);
 }
 
-.footer-col .icons .fa-facebook-f {
+.footer-col .social-media-icons .fa-facebook-f {
     color: #1877F2;
 }
 
-.footer-col .icons .fa-twitter {
+.footer-col .social-media-icons .fa-twitter {
     color: #1DA1F2;
 }
 
-.footer-col .icons .fa-instagram {
+.footer-col .social-media-icons .fa-instagram {
     color: #E4405F;
 }
 
-.footer-col .icons .fa-github {
+.footer-col .social-media-icons .fa-github {
     color: #333;
 }
 
